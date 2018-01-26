@@ -1,2 +1,0 @@
-# FengjiaxinLi-Class
-an example
