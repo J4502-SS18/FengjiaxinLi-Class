@@ -1,11 +1,12 @@
 /*styles go here*/
 
 p {
-	color: #1c6b66;
+	color: #2e3b64;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
+  color:#9ba5c7;
     font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -21,7 +22,7 @@ h1 {
 
 #nav a:link, #nav a:visited {
 	color: #ffffff;
-	background-color:#4d682a;
+	background-color:#2e3b64;
 	font-weight:bold;
 	display:block;
 	text-decoration: none;
@@ -31,7 +32,7 @@ h1 {
 }
 
 #nav a:hover, #nav a:active {
-	background-color:#7a991a;
+	background-color:#9ba5c7;
 }
 
 .caption {
