@@ -2,12 +2,15 @@
 
 p {
 	color: #2e3b64;
-    font-family: Helvetica, Arial, sans-serif;
+		font-family: "Josefin Slab", serif;
+		text-align: center;
 }
 
 h1 {
   color:#9ba5c7;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "IM Fell English SC", serif;
+		text-align: center;
+		font-size:4em;
 }
 
 #container{
@@ -27,17 +30,18 @@ h1 {
 	display:block;
 	text-decoration: none;
 	text-align: center;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Allerta Stencil", sans-serif;
 	padding: 4px;
 }
 
 #nav a:hover, #nav a:active {
 	background-color:#9ba5c7;
+	font-size: 2em;
 }
 
 .caption {
 	color:black;
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: "Allerta Stencil", sans-serif;
 	font-style: italic;
 	font-size: 0.8em;
 	margin-top:0;
