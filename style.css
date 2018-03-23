@@ -4,13 +4,14 @@ p {
 	color: #2e3b64;
 		font-family: "Josefin Slab", serif;
 		text-align: center;
+		font-size:1em;
 }
 
 h1 {
   color:#9ba5c7;
     font-family: "IM Fell English SC", serif;
 		text-align: center;
-		font-size:4em;
+		font-size:2em;
 }
 
 #container{
@@ -39,6 +40,29 @@ h1 {
 	font-size: 2em;
 }
 
+.navigation{
+	list-style: none;
+	margin: 0;
+	background: gray;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
+}
+
+
 .caption {
 	color:black;
 	font-family: "Allerta Stencil", sans-serif;
@@ -49,5 +73,64 @@ h1 {
 }
 
 img {
-	border: none;
+	width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+header, article {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+/*These styles activate when the page is larger than 800px wide*/
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: black;
+    }
+
+
+    article {
+		flex: 3 0px;
+	}
+
+    article {
+        order: 2;
+    }
+
+
+    article {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+
+    .image {
+        width: 45%;
+        margin-right: 10px;
+    }
+
+    .story {
+        width: 45%;
+    }
+
+    .first {
+        margin-top: 0;
+    }
 }
