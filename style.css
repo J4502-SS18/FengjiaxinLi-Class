@@ -2,22 +2,54 @@
 
 p {
 	color: #2e3b64;
-		font-family: "Josefin Slab", serif;
-		text-align: center;
+		font-family: "IM Fell English SC", serif;
+		text-align: left;
 		font-size:1em;
 }
 
 h1 {
   color:#9ba5c7;
     font-family: "IM Fell English SC", serif;
-		text-align: center;
+		text-align: left;
 		font-size:2em;
+}
+
+h2 {
+	color:#9ba5c7;
+    font-family: "Josefin Slab", serif;
+		text-align: left;
+		font-size:1em;
+}
+
+nav {
+	color: #2e3b64;
+		font-family: "IM Fell English SC", serif;
+		font-size:1em;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.authorbox img {
+  display: none;
+}
+
+.pullquote {
+  display: none;
 }
 
 #container{
     width: 85%;
     margin: 0 auto;
 }
+
 
 #nav {
     padding: 0;
@@ -32,36 +64,20 @@ h1 {
 	text-decoration: none;
 	text-align: center;
 	font-family: "Allerta Stencil", sans-serif;
-	padding: 4px;
+	padding: 10px;
 }
 
-#nav a:hover, #nav a:active {
-	background-color:#9ba5c7;
-	font-size: 2em;
+
+
+/*
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
 }
 
-.navigation{
-	list-style: none;
-	margin: 0;
-	background: gray;
-    padding: 0;
-    display: flex;
-	flex-flow: column;
-}
-
-.navigation a {
-	text-decoration: none;
-	display: block;
-	color: white;
-    text-align:center;
-    padding: 10px;
-    border-bottom:1px solid black;
-}
-
-.navigation li:last-of-type a{
+article:last-of-type {
   border-bottom: none;
 }
-
 
 .caption {
 	color:black;
@@ -76,11 +92,6 @@ img {
 	width: 100%;
 }
 
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
-}
-
 
 header, article {
   flex: 1 100%;
@@ -88,7 +99,7 @@ header, article {
 }
 
 /*These styles activate when the page is larger than 800px wide*/
-
+/*
 @media (min-width:800px) {
 
     .navigation {
@@ -133,4 +144,96 @@ header, article {
     .first {
         margin-top: 0;
     }
+}
+*/
+
+@media screen and (min-width: 450px) {
+
+    nav ul {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    #container {
+        width: 80%;
+    }
+
+    .authorbox img {
+      display: block;
+      width: 100%;
+      margin-top: 0.5em;
+    }
+
+    .authorbox {
+      width: 25%;
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .item1 {
+      margin-right: auto;
+    }
+
+    nav ul li {
+      margin: 5px;
+    }
+
+    .pullquote {
+      display: block;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b b"
+        "c c e"
+        ". d d";
+  }
+
+  .authorbox {
+    width: 100%;
+    grid-area: a;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
+
+  .pullquote {
+    margin-top: 0;
+    grid-area: e;
+  }
+
+  .section1 p:first-of-type {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b b e"
+        "c c c ."
+        ". d d .";
+  }
 }
