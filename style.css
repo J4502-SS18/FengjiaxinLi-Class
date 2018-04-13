@@ -1,7 +1,7 @@
 /*styles go here*/
 
 p {
-	color: #2e3b64;
+	color: #587b9c;
 		font-family: "IM Fell English SC", serif;
 		text-align: left;
 		font-size:1em;
@@ -16,7 +16,7 @@ h1 {
 
 h2 {
 	color:#9ba5c7;
-    font-family: "Josefin Slab", serif;
+    font-family: "IM Fell English SC", serif;
 		text-align: left;
 		font-size:1em;
 }
@@ -104,8 +104,8 @@ article:last-of-type {
 }
 
 .caption {
-	color:black;
-	font-family: "Allerta Stencil", sans-serif;
+	color:#32837e;
+	font-family: "Josefin Slab", sans-serif;
 	font-style: italic;
 	font-size: 0.8em;
 	margin-top:0;
