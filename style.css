@@ -8,10 +8,10 @@ p {
 }
 
 h1 {
-  color:#ffffff;
+  color:#f8ecc2;
     font-family: "IM Fell English SC", serif;
 		text-align: left;
-		font-size:2em;
+
 }
 
 h2 {
@@ -35,16 +35,14 @@ nav ul {
 
 .authorbox img {
   display: none;
+	width:150%;
+
 }
 
 .pullquote {
   display: none;
 }
 
-#container{
-    width: 85%;
-    margin: 0 auto;
-}
 
 /*
 #nav {
@@ -277,6 +275,7 @@ nav a {
     display: block;
     text-decoration: none;
     padding: 10px 30px;
+
 }
 
 header {
